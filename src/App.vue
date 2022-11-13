@@ -12,7 +12,7 @@
 				:publishTime="post.publish_time"
 			></post>
 		</div>
-		<el-empty description="这里没有消息哟" />
+		<el-empty description="这里没有消息哟" v-show="isNothing" />
 
 		<p v-show="isFinished" class="empty">已经没有更多消息了~</p>
 	</div>
@@ -137,31 +137,6 @@ export default {
 	min-width: 300px;
 	margin: 0 auto;
 	padding: 0 20px;
-}
-
-.container .search-box {
-	display: flex;
-	gap: 10px;
-}
-
-.container .search-input {
-	flex: 1;
-
-	padding: 5px 10px;
-
-	border: none;
-	outline: none;
-
-	/* 两端变圆 */
-	border-radius: 999999px;
-}
-
-.container .input-dialog .bottom .buttons {
-	opacity: 1;
-}
-
-.container .input-dialog .bottom {
-	justify-content: flex-end;
 }
 
 .container .title {
