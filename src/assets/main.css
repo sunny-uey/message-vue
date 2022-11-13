@@ -1,0 +1,21 @@
+:root {
+	box-sizing: border-box; /* 设置根元素的 box-sizing: border-box */
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit; /* box-sizing 继承自父元素 */
+}
+
+html {
+	background-color: black;
+}
+.button {
+	cursor: pointer;
+
+	padding: 5px 10px;
+	/* 两端变圆 */
+	border-radius: 999999px;
+
+	user-select: none;
+}
